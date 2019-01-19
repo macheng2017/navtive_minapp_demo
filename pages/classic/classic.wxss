@@ -1,0 +1,23 @@
+/* pages/classic/classic.wxss */
+
+.container {
+  display: flex;
+}
+
+.chunk {
+  width: 100px;
+  height: 100px;
+
+}
+
+.color1 {
+  background-color: darkblue;
+}
+
+.color2 {
+  background-color: brown;
+}
+
+.color3 {
+  background-color: rgb(16, 129, 82);
+}
