@@ -1,6 +1,1 @@
-<!--pages/classic/classic.wxml-->
-<view class="container">
-  <view class="chunk color1"></view>
-  <view class="chunk color2"></view>
-  <view class="chunk color3"></view>
-</view>
+<like-cmp></like-cmp>
