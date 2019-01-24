@@ -5,7 +5,7 @@ const tips = {
   1005: '授权失败',
   3000: '未知错误'
 }
-class HTTP {
+class Http {
   request(params) {
     if (!params.method) {
       params.method = 'GET'
@@ -46,4 +46,4 @@ class HTTP {
   }
 }
 
-export { HTTP }
+export { Http }

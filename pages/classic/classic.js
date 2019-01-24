@@ -1,11 +1,13 @@
 // pages/classic/classic.js
-import { HTTP } from '../../utils/http'
-let http = new HTTP()
+import { ClassicModel } from '../../models/classic'
+let classic = new ClassicModel()
 Page({
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+    classic: ''
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -15,12 +17,11 @@ Page({
     //   url: 'http://bl.7yue.pro/v1/classic/latest',
     //   header: { appkey: 'L1jx1MUHo615XJGx' }
     // })
-    http.request({
-      url: 'classic/latest',
-      method: 'GET',
-      success: res => {
-        console.log(res)
-      }
+    classic.getLatest(res => {
+      // console.log(res)
+      this.setData({
+        classic: res
+      })
     })
   },
 
